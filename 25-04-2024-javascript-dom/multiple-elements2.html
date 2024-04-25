@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- DOM - Document Object Model -->
+
+    <div class="card-header">
+        <h3 class="cart-title h1" id="title">Todo App</h3>        
+    </div>
+
+    <ul id="task-list">
+        <li class="task">Görev 1</li>
+        <li class="task">Görev 2</li>
+        <li class="task">Görev 3</li>
+    </ul>
+
+    <li class="task">Görev 1</li>
+    <li class="task">Görev 2</li>
+    <li class="task">Görev 3</li>
+
+
+    <script>
+        let sonuc;
+
+       sonuc = document.getElementsByClassName("task");
+       sonuc = document.getElementsByClassName("task")[2];
+
+       //let taskList = document.getElementsByClassName("task");
+       //let ul = document.getElementById("task-list");
+       //let taskList = ul.getElementsByTagName("li");
+       let taskList = document.querySelectorAll("#task-list li");
+
+        // for(let i=0; i<6; i++)
+        // {
+        //     console.log(taskList[i]);
+        // }
+
+        for(let task of taskList) 
+        {
+           console.log(task);
+        }   
+
+      //console.log(sonuc);
+    </script>
+</body>
+</html>
